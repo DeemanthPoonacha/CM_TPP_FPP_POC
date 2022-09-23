@@ -42,7 +42,7 @@ public class CamController : MonoBehaviour
             FPP_Cam.Priority -= cameraPriorityFactor;
             TPP_Cam.Priority += cameraPriorityFactor;
             _activeCamera = TPP_Cam;
-            mainCamera.cullingMask |= (1 << LayerMask.NameToLayer("Character"));
+            mainCamera.cullingMask |= (1 << LayerMask.NameToLayer("Player"));
             playerCam.TPP=true;
         }
         else if(_activeCamera==TPP_Cam)
@@ -50,7 +50,7 @@ public class CamController : MonoBehaviour
             TPP_Cam.Priority -= cameraPriorityFactor;
             FPP_Cam.Priority += cameraPriorityFactor;
             _activeCamera = FPP_Cam;
-            mainCamera.cullingMask &= ~(1 << LayerMask.NameToLayer("Character"));
+            StartCoroutine(MaskPlayerLayer());
             playerCam.TPP=false;
         }
         else
@@ -60,6 +60,11 @@ public class CamController : MonoBehaviour
             playerCam.TPP=true;
         }
         playerCam.RotateCamera();
+    }
 
+    IEnumerator MaskPlayerLayer()
+    {
+        yield return new WaitForSeconds(1f);
+        mainCamera.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
     }
 }

@@ -406,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314321611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.7, y: 0, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473088943}
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 876305906}
   - component: {fileID: 876305905}
   - component: {fileID: 876305904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1231,7 +1231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142901135}
   - component: {fileID: 1142901136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CamRoot
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -1329,7 +1329,7 @@ GameObject:
   - component: {fileID: 1633920508}
   - component: {fileID: 1633920507}
   - component: {fileID: 1633920506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1493,7 +1493,7 @@ GameObject:
   - component: {fileID: 1893122245}
   - component: {fileID: 1893122244}
   - component: {fileID: 1893122243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
